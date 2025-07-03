@@ -1,4 +1,4 @@
-List<String> ukrainianNames1 = [
+final List<String> ukrainianNames1 = [
   'Андрій',
   'Богдан',
   'Владислав',
@@ -51,7 +51,7 @@ List<String> ukrainianNames1 = [
   'Еміль',
 ];
 
-List<String> ukrainianNames2 = [
+final List<String> ukrainianNames2 = [
   'Анатолій',
   'Богдан',
   'Василь',
