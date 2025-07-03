@@ -1,11 +1,13 @@
 import 'dart:math';
 
-void main() {
-  print('-------------- TASK 1: Dart Collections Journey --------------');
-  runTask1();
+import 'package:dart_collections_journey/names.dart';
 
-  //print('-------------- TASK 2: Dart Collections Journey --------------');
-  //runTask2();
+void main() {
+  //print('-------------- TASK 1: Dart Collections Journey --------------');
+  //runTask1();
+
+  print('-------------- TASK 2: Dart Collections Journey --------------');
+  runTask2();
 
   //print('-------------- TASK 3: Dart Collections Journey --------------');
   //runTask3();
@@ -39,6 +41,15 @@ void runTask1() {
   );
 }
 
-void runTask2() {}
+void runTask2() {
+  Set<String> uniqueNames1 = ukrainianNames1.toSet();
+  Set<String> uniqueNames2 = ukrainianNames2.toSet();
+  Set<String> commonNames = uniqueNames1.intersection(uniqueNames2);
+  print('Кількість спільних імен: ${commonNames.length}');
+  Set<String> onlyInFirstSet = uniqueNames1.difference(uniqueNames2);
+  Set<String> onlyInSecondSet = uniqueNames2.difference(uniqueNames1);
+  print('Імена, які є тільки в першому списку: $onlyInFirstSet');
+  print('Імена, які є тільки в другому списку: $onlyInSecondSet');
+}
 
 void runTask3() {}
