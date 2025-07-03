@@ -1,4 +1,4 @@
-import 'package:dart_collections_journey/dart_collections_journey.dart';
+import 'package:dart_collections_journey/main.dart';
 import 'package:test/test.dart';
 
 void main() {
